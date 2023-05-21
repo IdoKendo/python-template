@@ -42,7 +42,6 @@ select = [
     "N",    #  pep8-naming
     "PT",   #  pytest style
     "RUF",  #  ruff
-    "S",    #  bandit
     "SIM",  #  simplify
     "UP",   #  pyupgrade
     "W",    #  warnings
@@ -56,10 +55,15 @@ force-single-line = true
 
 [tool.mypy]
 python_version = "3.8"
-strict = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+disallow_any_unimported = true
 warn_return_any = true
-warn_unreachable = true
-warn_no_return = true
+warn_unused_ignores = true
+no_implicit_optional = true
+show_error_codes = true
 
 [build-system]
 requires = ["poetry-core"]
