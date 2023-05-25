@@ -33,16 +33,17 @@ select = [
     "A",    #  builtins
     "ARG",  #  unsued arguments
     "B",    #  bugbear
+    "C4",   #  comprehensions
     "C90",  #  mccabe
     "COM",  #  commas
     "E",    #  pycodestyle
     "F",    #  pyflakes
-    "G",    #  logging
     "I",    #  isort
     "N",    #  pep8-naming
     "PT",   #  pytest style
     "RUF",  #  ruff
     "SIM",  #  simplify
+    "TID",  #  tidy imports
     "UP",   #  pyupgrade
     "W",    #  warnings
 ]
