@@ -17,6 +17,8 @@ A python 3.8+ template for bootstraping new projects. Following my opinionated b
   - Auto-linter
 - mypy
   - Static type-checker
+- deptry
+  - Check for dependency issues
 - tox
   - Virtual environment manager for testing
 - github actions
